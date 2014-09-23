@@ -79,7 +79,14 @@ while (!feof($file_handle))
 			$feature->properties = new stdclass;
 			
 			$feature->properties->catalogueNumber = $data->Catalogue_No;
-			$feature->properties->locality = $data->Locality;
+			$feature->properties->country = $data->Country;
+			
+			if (isset($feature->properties->locality))
+			{
+				$feature->properties->locality = $data->Locality;
+			}
+			$feature->properties->latitude = $data->Latitude;
+			$feature->properties->longitude = $data->Longitude;
 			
 			$feature->geometry = new stdclass;
 			$feature->geometry->type = 'Point';
