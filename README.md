@@ -23,6 +23,6 @@ endemic_filtered.tsv only 2 of 1826 records still in portal.
 
 no_coordinates.tsv 241 of 478 records still in portal.
 
-
+search_results.tsv 397 of 3825 records still in portal.
 
 

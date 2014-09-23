@@ -16,6 +16,7 @@ function translate_quoted($string) {
 //--------------------------------------------------------------------------------------------------
 $filename = dirname(dirname(__FILE__)) . '/data/endemic_filtered.tsv';
 $filename = dirname(dirname(__FILE__)) . '/data/no_coordinates.tsv';
+$filename = dirname(dirname(__FILE__)) . '/data/search_results.tsv';
 
 $file = @fopen($filename, "r") or die("couldn't open $filename");
 
@@ -72,6 +73,7 @@ while (!feof($file_handle))
 			}
 		}
 		
+		//print_r($data);
 		
 		$id = str_replace('http://data.gbif.org/occurrences/', '', $data->GBIF_portal_url);
 		$url = 'http://api.gbif.org/v1/occurrence/' . $id;
