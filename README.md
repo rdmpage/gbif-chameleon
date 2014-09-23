@@ -25,4 +25,10 @@ no_coordinates.tsv 241 of 478 records still in portal.
 
 search_results.tsv 397 of 3825 records still in portal.
 
+## Polygons
+
+To get quick and dirty view of distributions I computed convex hulls for taxa with > 2 distinct point localities. Records with negative longitude were discarded, those with latitude > 5 had latitude negated. Convex hulls computed using [Graham Scan](http://en.wikipedia.org/wiki/Graham_scan). You can see the results at https://github.com/rdmpage/gbif-chameleon/blob/master/data/endemic_filtered.polygon.geojson
+
+
+
 
