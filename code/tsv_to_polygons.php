@@ -162,9 +162,16 @@ while (!feof($file_handle))
 			// fudge for negative long
 			if ($data->Longitude < 0)
 			{
-				//$pt[0] = -$data->Longitude;
+				$pt[0] = -$data->Longitude;
 				$accept = false;
 			}
+			
+			if ($data->Latitude > 5)
+			{
+				$pt[1] = -$data->Latitude;
+				$accept = true;
+			}
+			
 			
 			if ($accept)
 			{
