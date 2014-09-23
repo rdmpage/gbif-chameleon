@@ -88,6 +88,9 @@ while (!feof($file_handle))
 			$feature->properties->latitude = $data->Latitude;
 			$feature->properties->longitude = $data->Longitude;
 			
+			
+			$feature->properties->gbif = str_replace('http://data.gbif.org/occurrences/', 'http://www.gbif.org/occurrence/', $data->GBIF_portal_url);
+			
 			$feature->geometry = new stdclass;
 			$feature->geometry->type = 'Point';
 			$feature->geometry->coordinates = array();
