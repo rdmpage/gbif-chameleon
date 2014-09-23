@@ -13,6 +13,16 @@ Angelique Hjarding. (2014). Endemic Chameleons of Kenya and Tanzania. Figshare. 
 
 ![qr](https://github.com/rdmpage/gbif-chameleon/raw/master/data/qrcode.jpeg)
 
+The GBIF search results consist of 3825 records. Those that represent endemic taxa comprise 1826 records, 478 records have no coordinates.
+
+## Reproducibility
+
+How many GBIF records are still in the portal?
+
+endemic_filtered.tsv only 2 of 1826 records still in portal.
+
+no_coordinates.tsv 241 of 478 records still in portal.
+
 
 
 
