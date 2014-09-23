@@ -78,7 +78,13 @@ while (!feof($file_handle))
 		
 			$feature->properties = new stdclass;
 			
+			// Specimen
+			$feature->properties->publisher = $data->Data_publisher;
 			$feature->properties->catalogueNumber = $data->Catalogue_No;
+			$feature->properties->updatedName = $data->updated_name;
+			$feature->properties->scientificName = $data->Scientific_name;
+
+			// Locality
 			$feature->properties->country = $data->Country;
 			
 			if (isset($feature->properties->locality))
@@ -88,7 +94,7 @@ while (!feof($file_handle))
 			$feature->properties->latitude = $data->Latitude;
 			$feature->properties->longitude = $data->Longitude;
 			
-			
+			// GBIF			
 			$feature->properties->gbif = str_replace('http://data.gbif.org/occurrences/', 'http://www.gbif.org/occurrence/', $data->GBIF_portal_url);
 			
 			$feature->geometry = new stdclass;
