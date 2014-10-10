@@ -30,5 +30,16 @@ search_results.tsv 397 of 3825 records still in portal.
 To get quick and dirty view of distributions I computed convex hulls for taxa with > 2 distinct point localities. Records with negative longitude were discarded, those with latitude > 5 had latitude negated. Convex hulls computed using [Graham Scan](http://en.wikipedia.org/wiki/Graham_scan). You can see the results at https://github.com/rdmpage/gbif-chameleon/blob/master/data/endemic_filtered.polygon.geojson
 
 
+## Resources
+
+### Museum collections
+
+Field Museum Herpetology database http://fm1.fieldmuseum.org/collections/search.cgi?dest=herps&action=form
+
+### Publications
+
+REILLY, S. M. (1982, December). ECOLOGICAL NOTES ON CHAMAELEO SCHUBOTZI FROM MOUNT KENYA . The Journal of the Herpetological Association of Africa. Informa UK Limited. [doi:10.1080/04416651.1982.9650103](http://dx.doi.org/10.1080/04416651.1982.9650103)
+
+Chamaeleo schubotzi KU 192387-192393, 19 October 1981, from top of Siromon Track, Mt Kenya, 3 335m.
 
 
