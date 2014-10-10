@@ -29,6 +29,11 @@ search_results.tsv 397 of 3825 records still in portal.
 
 To get quick and dirty view of distributions I computed convex hulls for taxa with > 2 distinct point localities. Records with negative longitude were discarded, those with latitude > 5 had latitude negated. Convex hulls computed using [Graham Scan](http://en.wikipedia.org/wiki/Graham_scan). You can see the results at https://github.com/rdmpage/gbif-chameleon/blob/master/data/endemic_filtered.polygon.geojson
 
+## Matching codes to current GBIF URLs
+
+Google Spreadsheet created to match providers to current GBIF dataset UUIDs and to generate specimen codes that can be resolved https://docs.google.com/spreadsheets/d/11fx1CjEiQdCjJ2XxZu3at0yX0AfCub6U_Vgt333900U/edit?usp=sharing
+
+Spreadsheet also dumped to TSV.
 
 ## Resources
 
